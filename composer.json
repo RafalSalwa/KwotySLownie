@@ -1,0 +1,39 @@
+{
+  "name": "rafalsalwa/amount-in-words",
+  "description": "Multi language standalone PHP number to words converter. Fully tested, open for extensions and new languages.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "number",
+    "to",
+    "words",
+    "string",
+    "money",
+    "currency",
+    "angle"
+  ],
+  "authors": [
+    {
+      "name": "Rafał Salwa",
+      "email": "rafal@salwa.com.pl"
+    }
+  ],
+  "require": {
+    "php": ">=5.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8.0",
+    "phpmd/phpmd": "~2.6.0",
+    "squizlabs/php_codesniffer": "~2.9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AmountInWords\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "NumberToWords\\": "tests"
+    }
+  }
+}
