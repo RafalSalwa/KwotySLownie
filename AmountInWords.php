@@ -15,10 +15,11 @@ class AmountInWords
         $numberParser = new NumberParser();
         $numbersCollection = $numberParser->getNumbersCollectionFromData($numbers);
         $numberTransformer = new NumberToWordTransformer();
+        /** @var Number $number */
         foreach($numbersCollection->getNumbers() as $number){
-            echo $numberTransformer->transformToText($number->getValue()) . PHP_EOL;
+            $number->setTextValue($numberTransformer->transformToText($number->getValue()));
         }
-
+        return $numbersCollection;
     }
 
 }
